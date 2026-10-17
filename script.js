@@ -30,64 +30,87 @@ document.getElementById("backToTop").addEventListener("click", () => {
   });
 });
 
-// Galería de las 13 fotos
+// Galería de las 18 fotos de toda la familia
 const memories = [
   {
     image: "fotos/foto1.jpg",
-    caption: "Los recuerdos más lindos empiezan con vos ♡"
+    caption: "Los recuerdos más lindos los compartimos con vos. ♡"
   },
   {
     image: "fotos/foto2.jpg",
-    caption: "Gracias por cada momento compartido."
+    caption: "Gracias por cada momento compartido en familia."
   },
   {
     image: "fotos/foto3.jpg",
-    caption: "Pequeños instantes que guardo en mi corazón."
+    caption: "Pequeños instantes que guardamos en el corazón."
   },
   {
     image: "fotos/foto4.jpg",
-    caption: "Qué suerte tengo de tenerte como mamá."
+    caption: "Qué suerte tenemos de tenerte en nuestras vidas."
   },
   {
     image: "fotos/foto5.jpg",
-    caption: "Tu amor siempre me acompaña."
+    caption: "Tu amor es parte de todo lo lindo que somos."
   },
   {
     image: "fotos/foto6.jpg",
-    caption: "Momentos que quisiera guardar para siempre."
+    caption: "Momentos que quisiéramos guardar para siempre."
   },
   {
     image: "fotos/foto7.jpg",
-    caption: "Gracias por estar en cada etapa de mi vida."
+    caption: "Gracias por acompañarnos en cada etapa."
   },
   {
     image: "fotos/foto8.jpg",
-    caption: "Con vos, hasta lo más simple es especial."
+    caption: "Con vos, hasta lo más simple se vuelve especial."
   },
   {
     image: "fotos/foto9.jpg",
-    caption: "Una historia llena de amor y recuerdos."
+    caption: "Una historia familiar llena de amor y recuerdos."
   },
   {
     image: "fotos/foto10.jpg",
-    caption: "Siempre voy a valorar todo lo que hacés por mí."
+    caption: "Siempre vamos a valorar todo lo que compartimos."
   },
   {
     image: "fotos/foto11.jpg",
-    caption: "Mi lugar seguro, hoy y siempre."
+    caption: "Tu abrazo siempre tiene un lugar especial."
   },
   {
     image: "fotos/foto12.jpg",
-    caption: "Gracias por enseñarme a levantarme y seguir."
+    caption: "Gracias por tantos momentos que nos unen."
   },
   {
     image: "fotos/foto13.jpg",
-    caption: "Te amo, mamá. Gracias por tanto. ♡"
+    caption: "Te amamos, mamá. Hoy y siempre. ♡"
+  },
+  {
+    image: "fotos/foto14.jpg",
+    caption: "Un recuerdo más de nuestra hermosa historia."
+  },
+  {
+    image: "fotos/foto15.jpg",
+    caption: "Las mejores cosas de la vida se comparten en familia."
+  },
+  {
+    image: "fotos/foto16.jpg",
+    caption: "Cada sonrisa guarda un pedacito de nuestro amor."
+  },
+  {
+    image: "fotos/foto17.jpg",
+    caption: "Que nunca nos falten momentos para abrazarnos."
+  },
+  {
+    image: "fotos/foto18.jpg",
+    caption: "18 recuerdos, miles de momentos y un amor infinito. ❤️"
   }
 ];
 
 // Mostrar las fotos en la página
 const photoGrid = document.getElementById("photoGrid");
+
+// Evitar duplicar las fotos si el código se ejecuta nuevamente
+photoGrid.innerHTML = "";
 
 memories.forEach((memory, index) => {
   const figure = document.createElement("figure");
@@ -95,7 +118,7 @@ memories.forEach((memory, index) => {
 
   const img = document.createElement("img");
   img.src = memory.image;
-  img.alt = "Recuerdo con mamá " + (index + 1);
+  img.alt = "Recuerdo familiar " + (index + 1);
   img.loading = "lazy";
 
   // Mostrar un aviso si una foto no se encuentra
@@ -114,3 +137,4 @@ memories.forEach((memory, index) => {
   figure.append(img, caption);
   photoGrid.appendChild(figure);
 });
+
