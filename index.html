@@ -1,0 +1,247 @@
+
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="theme-color" content="#fff7f5">
+  <meta name="description" content="Un regalo hecho con amor para mamá.">
+  <title>Para mamá, con todo mi amor</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div class="petals" aria-hidden="true">✿　✧　♡　✧　✿</div>
+
+  <main>
+    <section class="hero" id="inicio">
+      <p class="eyebrow">UN REGALO HECHO CON TODO MI AMOR</p>
+      <div class="tiny-heart" aria-hidden="true">♡</div>
+
+      <h1>Para vos,<br><em>mamá</em></h1>
+
+      <p class="hero-copy">
+        Hay cosas que no entran en una caja.<br>
+        Por eso hice este pequeño lugar para guardar
+        un poquito de todo el amor que siento por vos.
+      </p>
+
+      <button class="primary-button" id="openGift">
+        Abrí tu sorpresa <span>♡</span>
+      </button>
+
+      <p class="scroll-note">Hecho por mí, especialmente para vos</p>
+    </section>
+
+    <section class="content hidden" id="giftContent">
+
+      <section class="intro section-card">
+        <p class="eyebrow">PARA LA PERSONA QUE ES HOGAR</p>
+        <h2>Si pudiera regalarte<br>algo infinito…</h2>
+        <p>
+          Te regalaría la posibilidad de verte con mis ojos,
+          aunque fuera por un instante. Así podrías entender
+          cuánto significás para mí, cuánto valoro tus consejos
+          y qué suerte tengo de saber que estás cuando más te necesito.
+        </p>
+      </section>
+
+      <section class="music section-card">
+        <p class="eyebrow">UNA CANCIÓN PARA VOS</p>
+        <h2>Que la música te abrace ♡</h2>
+        <p>
+          Elegí esta canción como una dedicatoria a todo el amor
+          y la gratitud que a veces cuesta poner en palabras.
+        </p>
+
+        <p class="song-title">“Eso que tú me das” — Jarabe de Palo</p>
+
+        <a
+          class="primary-button music-link"
+          href="https://www.youtube.com/results?search_query=Jarabe+de+Palo+Eso+que+t%C3%BA+me+das+oficial"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          Escuchar la canción ♫
+        </a>
+
+        <audio id="backgroundMusic" controls loop preload="none" class="audio-player">
+          <source src="musica.mp3" type="audio/mpeg">
+          Tu navegador no puede reproducir este audio.
+        </audio>
+
+        <p class="music-note">
+          También podés escuchar la canción desde el enlace de YouTube.
+          Para usar el reproductor, necesitás agregar un archivo de audio
+          permitido llamado musica.mp3.
+        </p>
+      </section>
+
+      <section class="memories">
+        <p class="eyebrow">PEDACITOS DE NUESTRA HISTORIA</p>
+        <h2>Nuestros recuerdos <span>♡</span></h2>
+
+        <p class="section-lead">
+          Hay recuerdos que se quedan con nosotras para siempre.
+          Algunos nos hacen reír, otros nos enseñan, y todos
+          forman parte de nuestra historia.
+        </p>
+
+        <div class="memory-story section-card">
+          <div class="memory-icon" aria-hidden="true">🚲</div>
+          <p class="eyebrow">UNO DE MIS RECUERDOS FAVORITOS</p>
+          <h3>El día que me enseñaste a andar en bici</h3>
+
+          <p>
+            ¿Te acordás cuando me enseñaste a andar en bicicleta?
+            Terminé en una cuneta, llena de heridas, y seguro en ese
+            momento no fue nada divertido. Pero hoy, cuando lo recuerdo,
+            me doy cuenta de que fue mucho más que una caída.
+          </p>
+
+          <p>
+            Fue una de esas pequeñas aventuras que terminan enseñándonos
+            algo grande: que a veces nos caemos, nos lastimamos,
+            lloramos un poquito… y después volvemos a intentarlo.
+            Y qué lindo haber tenido a mi mamá cerca mientras aprendía.
+          </p>
+
+          <p>
+            Gracias por acompañarme mientras aprendía a hacer cosas nuevas,
+            incluso cuando no salían como esperábamos. ♡
+          </p>
+        </div>
+
+        <div class="photo-grid" id="photoGrid"></div>
+
+        <p class="photo-help">
+          Trece recuerdos, una historia de amor inmensa
+          y una mamá única. ♡
+        </p>
+      </section>
+
+      <section class="letter section-card">
+        <p class="eyebrow">ALGO QUE QUIERO QUE SEPAS</p>
+        <h2>Una carta para vos</h2>
+
+        <div class="letter-body">
+          <p>Mi mamá querida:</p>
+
+          <p>
+            Quería regalarte algo que no se terminara en un solo día.
+            Algo que pudieras abrir cuando quisieras, estés donde estés,
+            y que te recordara que hay alguien que te ama con todo
+            el corazón: yo.
+          </p>
+
+          <p>
+            A veces pienso en todos los recuerdos que compartimos y no sé
+            cuál elegir, porque hasta los más sencillos se vuelven
+            importantes cuando los miro con amor. Uno de mis favoritos
+            es cuando me enseñaste a andar en bicicleta. Terminé en una
+            cuneta, llena de heridas, y hoy puedo ver algo mucho más lindo
+            detrás de esa historia.
+          </p>
+
+          <p>
+            Me enseñaste que aprender no siempre es fácil, que a veces
+            una se cae y se lastima, pero que una caída no tiene por qué
+            ser el final. Hay que levantarse, volver a intentarlo y
+            seguir adelante.
+          </p>
+
+          <p>
+            Gracias por tus consejos, incluso por esos que tal vez no
+            entiendo enseguida, pero que con el tiempo cobran sentido.
+            Gracias por estar cuando más te necesito, por ser esa persona
+            a la que quiero acudir cuando algo me pasa y por darme la
+            tranquilidad de saber que no tengo que poder con todo sola.
+          </p>
+
+          <p>
+            No siempre encuentro la manera perfecta de decirte cuánto
+            te quiero. A veces las palabras se quedan cortas y la rutina
+            hace que no diga todo lo que llevo adentro. Por eso quise
+            crear esto para vos: para dejarte un pedacito de mi corazón
+            en un lugar al que puedas volver cuando quieras.
+          </p>
+
+          <p>
+            Si algún día me extrañás, abrí esta página. Mirá nuestras fotos,
+            recordá nuestras historias y acordate de que, aunque no pueda
+            abrazarte en ese instante, mi amor está con vos.
+            Ninguna distancia puede borrar todo lo que vivimos.
+          </p>
+
+          <p>
+            Ojalá pudiera darte ahora un abrazo de esos que duran mucho,
+            de los que dicen todo sin necesitar palabras. Mientras tanto,
+            te dejo este regalo, hecho con mis manos y con todo mi amor.
+          </p>
+
+          <p>
+            Te amo más de lo que a veces sé expresar. Gracias por ser mi
+            mamá, por tus consejos, por acompañarme y por estar cuando
+            más te necesito.
+          </p>
+
+          <p class="signature">
+            Feliz Día de la Madre, mamá.<br>
+            <span>Hoy, mañana y siempre, te llevo conmigo. ♡</span>
+          </p>
+        </div>
+      </section>
+
+      <section class="little-notes">
+        <p class="eyebrow">PARA CUANDO QUIERAS VOLVER</p>
+        <h2>Abrí un mensajito ♡</h2>
+        <p class="section-lead">Elegí el que necesites leer hoy.</p>
+
+        <div class="note-buttons">
+          <button class="note-button"
+            data-note="Si hoy me extrañás, cerrá los ojos un momento e imaginá que te estoy abrazando fuerte. Mi amor te acompaña incluso cuando no estoy al lado tuyo.">
+            Si me extrañás
+          </button>
+
+          <button class="note-button"
+            data-note="Ojalá hoy encuentres una razón para sonreír. Y si el día se hace difícil, acordate de que sos muy importante para mí y que te merecés todo el amor bonito del mundo.">
+            Si necesitás sonreír
+          </button>
+
+          <button class="note-button"
+            data-note="Gracias por tus consejos y por estar cuando más te necesito. Tu compañía significa muchísimo para mí.">
+            Si querés recordar cuánto te amo
+          </button>
+        </div>
+
+        <div class="note-reveal" id="noteReveal" aria-live="polite">
+          Tu mensajito va a aparecer acá. ♡
+        </div>
+      </section>
+
+      <section class="ending">
+        <div class="ending-heart">♡</div>
+        <p class="eyebrow">Y SIEMPRE ACORDATE DE ESTO</p>
+
+        <h2>La distancia no cambia<br>lo que sos para mí.</h2>
+
+        <p>
+          Gracias por tus consejos,<br>
+          por estar cuando más te necesito<br>
+          y por enseñarme tanto, hasta en los días de bicicleta y caídas.
+        </p>
+
+        <p class="final-signature">Te amo, mamá. Hoy y siempre.</p>
+
+        <button class="text-button" id="backToTop">
+          Volver al principio ↑
+        </button>
+      </section>
+
+    </section>
+  </main>
+
+  <footer>Hecho con amor, especialmente para mamá ♡</footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
