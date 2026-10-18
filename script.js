@@ -105,7 +105,13 @@ const memories = [
     caption: "18 recuerdos, miles de momentos y un amor infinito. ❤️"
   }
 ];
-
+  { image: "fotos/foto18.jpg", caption: "18 recuerdos, miles de momentos y un amor infinito. ❤️" },
+  { image: "fotos/foto19.jpg", caption: "Un recuerdo más para guardar en el corazón. ❤️" },
+  { image: "fotos/foto20.jpg", caption: "Nuestra familia, nuestro tesoro más lindo. 💗" },
+  { image: "fotos/foto21.jpg", caption: "Momentos especiales que siempre llevaremos con nosotros. ♡" },
+  { image: "fotos/foto22.jpg", caption: "Juntos construimos recuerdos llenos de amor. ❤️" },
+  { image: "fotos/foto23.jpg", caption: "23 fotos, miles de recuerdos y un amor que nos une para siempre. 💕" }
+];
 // Mostrar las fotos en la página
 const photoGrid = document.getElementById("photoGrid");
 
